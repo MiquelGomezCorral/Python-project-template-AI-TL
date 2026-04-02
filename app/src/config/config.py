@@ -3,14 +3,25 @@
 Configuration of project variables that we want to have available
 everywhere and considered configuration.
 """
-# import os
-import dataclasses
+import os
 from dataclasses import dataclass
-from argparse import Namespace
+
+from maikol_utils.file_utils import make_dirs
 
 @dataclass 
 class Configuration:
     """Configuration class for the project."""
+    # ===================================================================
+    #                       PATHS
+    # ===================================================================
+    DATA_PATH: str = os.path.join("..", "data")
+    MODELS_PATH: str = os.path.join("..", "models")
+    LOGS_PATH: str = os.path.join("..", "logs")
+
+
+    # ===================================================================
+    #                       PARAMETER
+    # ===================================================================
 
     exp_name: str = "base_name"
     seed:     int = 42
@@ -28,3 +39,4 @@ class Configuration:
 
     def __post_init__(self):
         ...
+        make_dirs([self.DATA_PATH, self.MODELS_PATH, self.LOGS_PATH])

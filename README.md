@@ -34,19 +34,19 @@ To start a new project using this structure:
 Run the following commands to create your local environment and install dependencies:
 
 ```bash
-python3.12 -m venv venv
-source venv/bin/activate
+conda create --name MY_env python=3.13 -y
+conda activate MY_env
 
-# Install the app module in editable mode
-pip install -e app/
-
-# Install requirements using uv for speed
-pip install uv
+# Install uv global on you pc or only on this env
+# if only on this env:
+# pip install uv
+# if global, no need to install anything extra, just:
 uv pip install -r requirements.txt
 
-# Setup Jupyter Kernel
-pip install ipykernel
-python -m ipykernel install --user --name=venv --display-name "Python (venv)"
+pip install -e .
+
+uv pip install ipykernel
+python -m ipykernel install --user --name=MY_env --display-name "MY_env (Conda)"
 ```
 ### Dataset Source
 Link: Insert Link Here
@@ -83,19 +83,19 @@ Para iniciar un nuevo proyecto usando esta estructura:
 Ejecuta los siguientes comandos para crear tu entorno local e instalar las dependencias:
 
 ```bash
-python3.12 -m venv venv
-source venv/bin/activate
+conda create --name MY_env python=3.13 -y
+conda activate MY_env
 
-# Instalar el módulo app en modo editable
-pip install -e app/
-
-# Instalar requisitos usando uv para mayor velocidad
-pip install uv
+# Install uv global on you pc or only on this env
+# if only on this env:
+# pip install uv
+# if global, no need to install anything extra, just:
 uv pip install -r requirements.txt
 
-# Configurar el Kernel de Jupyter
-pip install ipykernel
-python -m ipykernel install --user --name=venv --display-name "Python (venv)"
+pip install -e .
+
+uv pip install ipykernel
+python -m ipykernel install --user --name=MY_env --display-name "MY_env (Conda)"
 ```
 ### Fuente dataset
 Link: Añade aquí el link a tu dataset

@@ -4,11 +4,14 @@ import dotenv
 import argparse
 from src.config import Configuration
 from maikol_utils.other_utils import args_to_dataclass
+from maikol_utils.print_utils import print_separator
 
 def cmd_read_extract(args: argparse.Namespace):
     """Call read_extract_from_config_list with the given args."""
     CONFIG: Configuration = args_to_dataclass(args, Configuration)
+    print_separator("START ...", sep_type="START")
     ...
+    print_separator("END ...", sep_type="START")
 
 def cmd_test(args):
     """Call test functions."""
