@@ -1,4 +1,5 @@
 # General Python Project Template
+Python Artifical Intelligence Template
 
 [English](#english) | [Español](#español)
 
