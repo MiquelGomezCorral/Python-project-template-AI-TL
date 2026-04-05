@@ -7,6 +7,7 @@ import os
 from dataclasses import dataclass
 
 from maikol_utils.file_utils import make_dirs
+import yaml
 
 @dataclass 
 class Configuration:
@@ -38,10 +39,13 @@ class Configuration:
     wandb_entity:       str = None
 
     def __post_init__(self):
-        ...
+        # Basic setup: create folders and load yaml config if provided
         make_dirs([self.DATA_PATH, self.MODELS_PATH, self.LOGS_PATH])
         if self.yaml_config_path:
             self._load_yaml_configuration(self.yaml_config_path)
+
+        # More stuff 
+        ...
 
         
     def _load_yaml_configuration(self, yaml_file: str) -> None:
