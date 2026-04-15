@@ -18,7 +18,9 @@ class Configuration:
     DATA_PATH: str = os.path.join("..", "data")
     MODELS_PATH: str = os.path.join("..", "models")
     LOGS_PATH: str = os.path.join("..", "logs")
-    yaml_config_path: str = None
+    CONFIGS_PATH: str = os.path.join("..", "configs")
+    yaml_config_name: str = None
+
 
     # ===================================================================
     #                       PARAMETER
@@ -40,9 +42,9 @@ class Configuration:
 
     def __post_init__(self):
         # Basic setup: create folders and load yaml config if provided
-        make_dirs([self.DATA_PATH, self.MODELS_PATH, self.LOGS_PATH])
-        if self.yaml_config_path:
-            self._load_yaml_configuration(self.yaml_config_path)
+        make_dirs([self.DATA_PATH, self.MODELS_PATH, self.LOGS_PATH, self.CONFIGS_PATH])
+        if self.yaml_config_name:
+            self._load_yaml_configuration(self.yaml_config_name)
 
         # More stuff 
         ...
