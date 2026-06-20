@@ -1,0 +1,17 @@
+title:
+  en: Python AI/ML Project Template
+  es: Plantilla de Proyecto Python AI/ML
+finished: finished
+descriptionShort:
+  en: Robust and scalable Python project template for data science and AI/ML workflows. Pre-configured folder structure (app, data, models, notebooks), uv dependency management, editable pip install, and Jupyter kernel setup. Bilingual README (EN/ES).
+  es: Plantilla de proyecto Python robusta y escalable para flujos de data science y AI/ML. Estructura de carpetas preconfigurada (app, data, models, notebooks), gestión de dependencias con uv, instalación pip editable, y configuración de kernel Jupyter. README bilingüe (EN/ES).
+descriptionLong:
+  en: |
+    A robust and scalable Python project template designed to minimize setup time for data science, AI, and transfer learning workflows. Provides a pre-configured directory structure (app/ for installable source code, data/ for datasets, models/ for serialized models, notebooks/ for Jupyter experimentation, docs/, logs/). Features modern tooling with uv for fast dependency resolution, editable pip install for seamless imports, and Jupyter kernel integration. Bilingual documentation in English and Spanish. Template-instantiable from GitHub for rapid project bootstrapping.
+  es: |
+    Una plantilla de proyecto Python robusta y escalable diseñada para minimizar el tiempo de configuración en flujos de data science, IA y transfer learning. Proporciona una estructura de directorios preconfigurada (app/ para código fuente instalable, data/ para datasets, models/ para modelos serializados, notebooks/ para experimentación Jupyter, docs/, logs/). Incluye herramientas modernas con uv para resolución rápida de dependencias, instalación pip editable para importaciones fluidas, e integración con kernel Jupyter. Documentación bilingüe en inglés y español. Instanciable como plantilla desde GitHub para arranque rápido de proyectos.
+technologies: [python, jupyter]
+tags: [other]
+slug: Python-project-template-AI-TL
+order: 15
+featured: false
