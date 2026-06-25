@@ -12,10 +12,14 @@ descriptionLong:
     Una plantilla de proyecto Python robusta y escalable diseñada para minimizar el tiempo de configuración en flujos de data science, IA y transfer learning. Proporciona una estructura de directorios preconfigurada (app/ para código fuente instalable, data/ para datasets, models/ para modelos serializados, notebooks/ para experimentación Jupyter, docs/, logs/). Incluye herramientas modernas con uv para resolución rápida de dependencias, instalación pip editable para importaciones fluidas, e integración con kernel Jupyter. Documentación bilingüe en inglés y español. Instanciable como plantilla desde GitHub para arranque rápido de proyectos.
 technologies: [python, jupyter]
 tags: [other]
+date:
+  en: Jan 2026
+  es: Ene 2026
 keywords:
   en: [Python template, project scaffold, data science template, ML project structure, editable install, Jupyter kernel, uv package manager, AI project, reproducible setup, folder structure, bilingual README]
   es: [plantilla Python, andamiaje de proyecto, plantilla data science, estructura proyecto ML, instalación editable, kernel Jupyter, gestor uv, proyecto IA, setup reproducible, estructura de carpetas, README bilingüe]
 slug: Python-project-template-AI-TL
 order: 15
 featured: false
+
 
